@@ -16,12 +16,20 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+
+    <br/>
+    <test-graph></test-graph>
+    <test-vue-graph></test-vue-graph>
   </div>
 </template>
 
 <script>
+import TestGraph from '@/components/TestGraph'
+import TestVueGraph from '@/components/TestVueGraph'
+
 export default {
   name: 'hello',
+  components: {TestGraph, TestVueGraph},
   data () {
     return {
       msg: 'Welcome to Your Vue.js PWA'
